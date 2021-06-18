@@ -1,0 +1,98 @@
+.container {
+  margin: 0 auto;
+  width: 1350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.TopMenu {
+  background-color: blue;
+  height: 568px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.TopMenu_photography {
+  background-image: url("./Hero_Image.png");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+}
+
+.TopMenu_mainView {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+}
+
+.TopMenu_nav {
+  background-color: blue;
+  height: 10%;
+  width: 80%;
+  margin-left: 100px;
+  //@at-root: 100px;
+}
+
+.TopMenu_navtwo {
+  background-color: white;
+  height: 36%;
+  width: 77%;
+  margin-top: 100px;
+}
+
+.TopMenu_nav_log {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.TopMenu_nav_menu {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+}
+
+.TopMenu_nav_menu_list {
+  color: black;
+  display: flex;
+}
+
+.TopMenu_navtwo_welcomeInscription {
+  height: 30%;
+  width: 100%;
+  size: 38px;
+}
+
+.TopMenu_navtwo_decoration {
+  height: 40%;
+  width: 100%;
+  background-image: url("./Decoration.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TopMenu_navtwo_buttons {
+  height: 30%;
+  width: 100%;
+}
+
+.TopMenu_nav_log_buttons {
+  padding-left: 240px;
+}
+
+.nav_link {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.inscription {
+  font-size: 30px;
+  font-family: $font-base;
+}

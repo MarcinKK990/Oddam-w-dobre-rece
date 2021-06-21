@@ -2,6 +2,10 @@
 @import "./settings/colors";
 @import "./settings/fonts";
 @import "./reset.scss";
-@import "./settings/HomeHeader.scss";
-@import "./settings/HomeThreeColumns.scss";
-@import "./settings/Greetingsteps.scss";
+@import "./elements/HomeHeader.scss";
+@import "./elements/HomeThreeColumns.scss";
+@import "./elements/Greetingsteps.scss";
+@import "./elements/AboutUs.scss";
+@import "./elements/WhoWeHelp.scss";
+@import "./elements/ContactForm.scss";
+@import "./elements/login.scss";

@@ -1,66 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import decoration from "../assets/Decoration.svg";
+import ConstantHeader from "./ConstantHeader";
+//import ConstantHeaderAfterLogin from "./ConstantHeaderAfterLogin";
 
 function HomeHeader() {
   return (
     <>
-      <div className="TopMenu container">
-        <div className="TopMenu_photography"></div>
-        <div className="TopMenu_mainView">
-          <div className="TopMenu_nav">
-            <div className="TopMenu_nav_log">
-              <div className="TopMenu_nav_log_buttons">
-                <button>Zaloguj</button>
-                <button>Załóż konto</button>
-              </div>
-            </div>
-            <div className="TopMenu_nav_menu">
-              <div>
-                <ul className="TopMenu_nav_menu_list">
-                  <li className="menu">
-                    <a href="#Start" class="nav__link">
-                      Start
-                    </a>
-                  </li>
-                  <li className="menu">
-                    <a href="O co chodzi" class="nav_link">
-                      O co chodzi ?
-                    </a>
-                  </li>
-                  <li className="menu">
-                    <a href="O nas" class="nav_link">
-                      O nas
-                    </a>
-                  </li>
-                  <li className="menu">
-                    <a href="Fundacja i organizacje" class="nav_link">
-                      Fundacja i organizacje
-                    </a>
-                  </li>
-                  <li className="menu">
-                    <a href="Kontakt" class="nav_link">
-                      Kontakt
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="TopMenu_navtwo">
-            <div className="TopMenu_navtwo_welcomeInscription">
-              <h1 className="inscription">
-                Zacznij pomagać. Oddaj niechciane rzeczy w zaufane ręce
-              </h1>
-            </div>
-            <div className="TopMenu_navtwo_decoration"></div>
-            <div className="TopMenu_navtwo_buttons">
-              <button>Oddaj rzeczy</button>
-              <button>Zorganizuj zbiórkę</button>
-            </div>
+      <div className="allSide">
+        <div className="leftSide"></div>
+        <div className="rightSide">
+          {<ConstantHeader />}
+          <div className="headerButton">
+            <h1>
+              Zacznij pomagać!
+              <br />
+              Oddaj niechciane rzeczy w zaufane ręce
+            </h1>
+            <img src={decoration} alt="obrazek" />
+            <br />
+            <Link to={"/Login"}>ODDAJ RZECZY</Link>
+            <Link to="/#">ZORGANIZUJ ZBIÓRKĘ</Link>
           </div>
         </div>
       </div>
     </>
   );
 }
-
 export default HomeHeader;

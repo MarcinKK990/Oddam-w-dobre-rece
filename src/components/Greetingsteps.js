@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
-import decoration from "../scss/settings/Decoration.svg";
-import iconOne from "../components/Icon-1.svg";
-import iconTwo from "../components/Icon-2.svg";
-import iconThree from "../components/Icon-3.svg";
-import iconFour from "../components/Icon-4.svg";
+import decoration from "../assets/Decoration.svg";
+import iconOne from "../assets/Icon-1.svg";
+import iconTwo from "../assets/Icon-2.svg";
+import iconThree from "../assets/Icon-3.svg";
+import iconFour from "../assets/Icon-4.svg";
 
 function GreetingSteps() {
   return (
